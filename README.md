@@ -67,6 +67,13 @@ hr {
 }
 ```
 
+How to use the `calc()` CSS function:
+```css
+img {
+  width: calc(100% - 80px);
+}
+```
+
 ### Continued development
 
 Can I put another tag before <header> in an <article>?
