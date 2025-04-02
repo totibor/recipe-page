@@ -66,7 +66,7 @@ ol {
 }
 
 html {
-  font-size: 16px;
+  font-size: var(--spacing-200);
 }
 
 body {
@@ -75,7 +75,7 @@ body {
   align-items: center;
   background-color: var(--stone-100);
   margin: 0;
-  padding: 16px;
+  padding: var(--spacing-1600) var(--spacing-200);
 }
 
 h1 {
@@ -179,7 +179,7 @@ ul {
 
 ul li {
   position: relative;
-  padding-left: 40px;
+  padding-left: var(--spacing-500);
 }
 
 ul li::before {
@@ -187,9 +187,9 @@ ul li::before {
   color: var(--brown-800);
   position: absolute;
   left: 0;
-  width: 16px;
-  margin-left: 8px;
-  margin-right: 16px;
+  width: var(--spacing-200);
+  margin-left: var(--spacing-100);
+  margin-right: var(--spacing-200);
 }
 
 ol {
@@ -200,7 +200,7 @@ ol {
 
 ol li {
   position: relative;
-  padding-left: 40px;
+  padding-left: var(--spacing-500);
 }
 
 ol li::before {
@@ -208,9 +208,9 @@ ol li::before {
   content: counter(list-counter) ".";
   position: absolute;
   left: 0;
-  width: 16px;
-  margin-left: 8px;
-  margin-right: 16px;
+  width: var(--spacing-200);
+  margin-left: var(--spacing-100);
+  margin-right: var(--spacing-200);
   font-family: "Outfit", serif;
   font-weight: 700;
   font-size: 1rem;
