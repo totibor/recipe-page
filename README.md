@@ -54,7 +54,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 `.prettierignore` files work the same as `.gitignore`
 
-To style <hr> first remove all borders then add back top or bottom. If <hr> is a flex child then set the `width` property.
+To style `<hr>` first remove all borders then add back top or bottom. If `<hr>` is a flex child then set the `width` property.
 ```css
 hr {
   width: 100%;
@@ -120,4 +120,4 @@ Save one of my todo comment just because I find it an interesting sentence :)
 
 ### Continued development
 
-Can I put another tag before <header> in an <article>?
+Can I put another tag before `<header>` in an `<article>`?
