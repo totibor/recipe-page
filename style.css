@@ -172,6 +172,53 @@ li:not(:last-child) {
   margin-bottom: var(--sapcing-100);
 }
 
+ul {
+  padding-inline-start: 0px; /* remove default padding */
+  list-style: none;
+}
+
+ul li {
+  position: relative;
+  padding-left: 40px;
+}
+
+ul li::before {
+  content: "•";
+  color: var(--brown-800);
+  position: absolute;
+  left: 0;
+  width: 16px;
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+ol {
+  padding-inline-start: 0px;
+  list-style: none;
+  counter-reset: list-counter;
+}
+
+ol li {
+  position: relative;
+  padding-left: 40px;
+}
+
+ol li::before {
+  counter-increment: list-counter;
+  content: counter(list-counter) ".";
+  position: absolute;
+  left: 0;
+  width: 16px;
+  margin-left: 8px;
+  margin-right: 16px;
+  font-family: "Outfit", serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: var(--brown-800);
+}
+
 .card {
   flex: initial;
   width: 736px;
